@@ -488,10 +488,6 @@ plt.show()
 
 
 
-#using these test, we can clearly see the variation in std and mean.Hence it is not stationary. Further, our test statistics are greater than the critical value at 99%, 95%, 90% confidence interval.
-#hence cant reject the null hypothesis.
-
-Transform the dataset to stationary
 
 
 
