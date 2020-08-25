@@ -5,7 +5,7 @@ I use a public dataset of monthly carbon dioxide emissions from electricity gene
 resource starting January 1973 to July 2016.
 
 * lets find out the emission value for each of the power generation:<br>
-<img src="https://user-images.githubusercontent.com/64869288/91199568-e5ab5700-e6b2-11ea-94ac-9466b8ffb7ab.png" width="750" height="350">
+<img src="https://user-images.githubusercontent.com/64869288/91201680-93b80080-e6b5-11ea-9731-ef806be48834.png" width="750" height="350">
 
 * In the recent years natral gas consumption is increasing and the use of coal for power generation has been declining.
 * bar chart of CO2 emission per energy source
@@ -30,7 +30,7 @@ A short summary about stationarity from Wikipedia: A stationary process is a sto
 * We state our null hypothesis that our dataset is non-stationary. If test statisitics < critical value, we can reject the null hypo.
 
 #### Testing the monthly emission time series:
-<img src="https://user-images.githubusercontent.com/64869288/91197657-72084a80-e6b0-11ea-84e0-310314ba4090.png" width="750" height="350">
+>
 
 ### Transforming the dataset into stationary dataset
 
