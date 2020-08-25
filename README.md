@@ -90,6 +90,14 @@ The dynamic=False argument ensures that we produce one-step ahead forecasts, mea
 #### Plotting the forecast models:
 <img src="https://user-images.githubusercontent.com/64869288/91200270-d082f800-e6b3-11ea-8577-1a1082127afb.png" width="750" height="350">
 
+The value obtained from the forecast model above: 
+lower Value  upper Value
+2016-08-31    58.062795    65.116463
+2016-09-30    47.317560    55.988192
+2016-10-31    40.737729    50.164196
+2016-11-30    36.178169    46.011815
+2016-12-31    38.097821    48.174630
+
 #### Accuracy using MSE:
 * The MSE value for the forecast is 14.4
 * RMSE for the forecast is  3.7950
