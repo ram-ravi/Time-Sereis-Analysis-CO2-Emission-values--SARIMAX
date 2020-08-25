@@ -14,11 +14,11 @@ resource starting January 1973 to July 2016.
 From the graph, it is seen that the contribution of coal is significant followed by natural gas.
 
 
-#### natural gas emission analysis
+#### Natural Gas Emission Analysis
 
 <img src="https://user-images.githubusercontent.com/64869288/91199505-d1fff080-e6b2-11ea-8bff-d199757e454c.png" width="750" height="350">
 
-#### test stationary
+#### Test Stationary
 
 The first thing we need to do is producing a plot of our time series dataset. From the plot, we will get an idea about the overall trend and seasonality of the series then, we will use a statistical method to assess the trend and seasonality of the dataset. After trend and seasonality are assessed if they are present in the dataset, they will be removed from the series to transform the nonstationary dataset into stationary and the residuals are further analyzed.
 
@@ -30,16 +30,16 @@ A short summary about stationarity from Wikipedia: A stationary process is a sto
 * We state our null hypothesis that our dataset is non-stationary. If test statisitics < critical value, we can reject the null hypo.
 
 #### Testing the monthly emission time series:
->
+<img src="https://user-images.githubusercontent.com/64869288/91204226-9bc56f80-e6b8-11ea-9056-326cb282871f.png" width="750" height="350">
 
 ### Transforming the dataset into stationary dataset
-
 #### a. Moving Average
 
 *We take the average of 'k' consecutive year depending on the freq of the time series.
 * we will take the average of 12 months.
 * we can see that the test statistics value is smaller than the critical value at 99%, 95%, 90% confidence interval. Hence the dataset is stationary.
 <img src="https://user-images.githubusercontent.com/64869288/91199757-2c994c80-e6b3-11ea-8bbb-d3919e4bbf3d.png" width="750" height="350">
+
 #### B. Exponential weighted moving average
 
 **Another technique is to take the ‘weighted moving average’ where more recent values are given a higher weight. The popular method to assign the weights is using the exponential weighted moving average. In this technique, weights are assigned to all previous values with a decay factor.
