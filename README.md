@@ -4,19 +4,19 @@
 I use a public dataset of monthly carbon dioxide emissions from electricity generation available at the Energy Information Administration and Jason McNeill. The dataset includes CO2 emissions from each energy 
 resource starting January 1973 to July 2016.
 
-lets find out the emission value for each of the power generation:<br>
+* lets find out the emission value for each of the power generation:<br>
 <img src="https://user-images.githubusercontent.com/64869288/91193160-a3cae280-e6ab-11ea-946d-2fbb97cb4900.png" width="750" height="350">
 
-#in the recent years natral gas consumption is increasing and the use of coal for power generation has been declining.
-#bar chart of CO2 emission per energy source
-
+* In the recent years natral gas consumption is increasing and the use of coal for power generation has been declining.
+* bar chart of CO2 emission per energy source
+<img src="https://user-images.githubusercontent.com/64869288/91197657-72084a80-e6b0-11ea-84e0-310314ba4090.png" width="750" height="350">
 
 From the graph, it is seen that the contribution of coal is significant followed by natural gas.
 
 
 #### natural gas emission analysis
 
-
+<img src="https://user-images.githubusercontent.com/64869288/91197657-72084a80-e6b0-11ea-84e0-310314ba4090.png" width="750" height="350">
 
 #### test stationary
 
@@ -25,41 +25,37 @@ The first thing we need to do is producing a plot of our time series dataset. Fr
 A short summary about stationarity from Wikipedia: A stationary process is a stochastic process whose unconditional joint probability distribution does not change when shifted in time. Consequently, parameters such as mean and variance, if they are present, also do not change over time.
 
 #### graphically test stationary
-
-##### from the figure it is evident that the co2 emission has seasonal variation.
-
-
+<img src="https://user-images.githubusercontent.com/64869288/91197657-72084a80-e6b0-11ea-84e0-310314ba4090.png" width="750" height="350">
+* from the figure it is evident that the co2 emission has seasonal variation.
 
 #### Test Staionary property
-test stationary using dickey-fuller unit root test.
-this method is used to check the stationarity of the dataset. where we use the critical value(threshold value) and compare it with some statistical value at different confidence level.
-we state our null hypothesis that our dataset is non-stationary. If test statisitics < critical value, we can reject the null hypo.
+* Test stationary using dickey-fuller unit root test.
+* This method is used to check the stationarity of the dataset. where we use the critical value(threshold value) and compare it with some statistical value at different confidence level.
+* We state our null hypothesis that our dataset is non-stationary. If test statisitics < critical value, we can reject the null hypo.
 
 
-#### testing teh monthly emission time series:
+#### Testing the monthly emission time series:
+<img src="https://user-images.githubusercontent.com/64869288/91197657-72084a80-e6b0-11ea-84e0-310314ba4090.png" width="750" height="350">
 
+### Transforming the dataset into stationary dataset
 
-#Transforming the dataset into station  ary dataset
+#### a. moving average
 
-#a. moving average
-
-#we take the average of 'k' consecutive year depending on the freq of the time series.
-#we will take the average of 12 months
-
-
-
-we can see that the test statistics value is smaller than the critical value at 99%, 95%, 90% confidence interval. Hence the dataset is stationary.
-
+*We take the average of 'k' consecutive year depending on the freq of the time series.
+* we will take the average of 12 months.
+* we can see that the test statistics value is smaller than the critical value at 99%, 95%, 90% confidence interval. Hence the dataset is stationary.
+<img src="https://user-images.githubusercontent.com/64869288/91199159-53a34e80-e6b2-11ea-9bcb-12112018dfac.png" width="750" height="350">
 #### B. Exponential weighted moving average
 
 **Another technique is to take the ‘weighted moving average’ where more recent values are given a higher weight. The popular method to assign the weights is using the exponential weighted moving average. In this technique, weights are assigned to all previous values with a decay factor.
+<img src="https://user-images.githubusercontent.com/64869288/91199030-2fe00880-e6b2-11ea-9bf9-c741aed19113.png" width="750" height="350">
 
-#Even, though the time series has lesser variation in mean and std dev compared to the original dataset, since the test statistics score is not smaller than teh critical values at various confidence level, failed to reject the null hypothesis.
+Even, though the time series has lesser variation in mean and std dev compared to the original dataset, since the test statistics score is not smaller than teh critical values at various confidence level, failed to reject the null hypothesis.
 
 #### c. Eliminating trend and seasonality
 
 The first difference improves the stationarity of the series significantly. Let us use also the seasonal difference to remove the seasonality of the data and see how that impacts stationarity of the data.
-
+<img src="https://user-images.githubusercontent.com/64869288/91199265-82212980-e6b2-11ea-8bed-e6c76edbf99d.png" width="750" height="350">
 
 Compared to the original data the seasonal difference also improves the stationarity of the series. The next step is to take the first difference of the seasonal difference.
 
