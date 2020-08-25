@@ -5,4 +5,4 @@ I use a public dataset of monthly carbon dioxide emissions from electricity gene
 resource starting January 1973 to July 2016.
 
 lets find out the emission value for each of the power generation:<br>
-<img src="https://user-images.githubusercontent.com/64869288/91193160-a3cae280-e6ab-11ea-946d-2fbb97cb4900.png" width="500" height="500">
+<img src="https://user-images.githubusercontent.com/64869288/91193160-a3cae280-e6ab-11ea-946d-2fbb97cb4900.png" width="750" height="350">
